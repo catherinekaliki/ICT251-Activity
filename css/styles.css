@@ -1,14 +1,28 @@
 /* --- Element Selectors --- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
-    color: #333333;
-    background-color: #fcfcfc;
+    color: #2d3748;
+    background-color: #f7fafc;
     margin: 0;
     padding: 0;
+    transition: backgroung-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    color: #fbf7fc;
+    background-color: #ab75cc;
+}
+body.dark-mode .content-section, body.dark-mode .project-card, body.dark-mode .gallery-item {
+    background-color: #c163e9;
+    border-color: #624a68;
+    color: #f7fafc;
+}
+body.dark-mode #contact {
+    background-color: #bc8cde;
+    border-color: #9f7aea;
 }
 
-header {
+header  {
     background-color: #421a5d;
     color: #ffffff;
     text-align: center;
@@ -16,6 +30,16 @@ header {
 }
 
 header h1 {
+    color:#ffffff;
+    background-color: #4a1d6e;
+    margin: 0;
+    font-size: 2.2rem;
+    
+    
+}
+
+header h2{
+    color: #ffffff;
     margin: 0;
     font-size: 2.2rem;
 }
@@ -113,7 +137,7 @@ audio {
 
 .caption {
     font-size: 0.9rem;
-    color: #574a68;
+    color: #341063;
     margin-top: 0.5rem;
 }
 
@@ -128,7 +152,7 @@ table {
 caption {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #644a68;
+    color: #61036f;
 }
 
 th, td {
@@ -139,7 +163,7 @@ th, td {
 
 th {
     background-color: #f3edf7;
-    color: #422d48;
+    color: #630a7b;
 }
 
 /* Media Containers */
@@ -172,12 +196,55 @@ th {
 
 .form-notice {
     font-style: italic;
-    color: #718096;
+    color: #907196;
     font-size: 0.9rem;
 }
 
+.demo-note{
+    font-style: italic;
+    color:#6b2fa0
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.project-card {
+    background: #f5edf7;
+    padding: 1rem;
+    border-radius: 6px;
+    color: #8a379f
+    margin-top: 0;
+}
+.expand-btn {
+    background-color: #762c88;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+.error-msg {
+    color: #942aac;
+    font-weight: bold;
+}
+.preview-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #a058a7;
+    color: #fffafe;
+    border: 1px solid #d49ae6;
+    border-radius: 4px;
+    max-width: 450px;
+    width: 100;
+}
+
 button[type="submit"] {
-    background-color: #9e2bb0;
+    background-color: #882bb0;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -220,3 +287,4 @@ footer {
         flex: 1;
     }
 }
+.hidden {display: none !important;}
