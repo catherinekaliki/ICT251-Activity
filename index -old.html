@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My personal Website</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <h1><i>CATHERINE KALIKI</i> 202508939: Cyber Security|Ethusiast!</h1>
+    <header>
+      <h2>welcome to my personal website</h2>
+      <p>My journey as a Cyber Security student.</p>
+    </header>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#hobbies">My Hobbies</a>
+      <a href="#learning">My Learning Plan</a>
+      <a href="#photos">My Photos</a>
+      <a href="#media">My Media</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>
+          Hello! My name is Catherine Kaliki, i'm a University student studying
+          Bachelor Of Science In SCyber Security. I am interested in technology
+          and learning how computers, networks and websites work. I am currently
+          learning web development using HTML and CSS. I hope to improve my
+          Programmin skills by practising regularly and building my own
+          websites. My goal is to become a skilled
+          <strong>Cyber Security Professional</strong> and become confident in
+          creating useful and attractive web pages.
+        </p>
+      </section>
+      <section id="hobbies" class="content section">
+        <h2>My hobbies</h2>
+        <ul>
+          <li>Reading</li>
+          <li>Researching network security protocols</li>
+          <li>Coding logic puzzles</li>
+        </ul>
+      </section>
+      <section id="projects" class="content-section">
+        <h2>Projects & Skills</h2>
+        <div class="project-list">
+          <div class="Project-Card">
+            <h3>1. Firewall Confugurations</h3>
+            <button class="expand-btn" data-target="details1">
+              Show Details
+            </button>
+            <p id="details1" hidden>
+              Implemented stateful packet filtering structures and mapped strict
+              inbound access lists to secure local network routing topologies.
+            </p>
+          </div>
+          <div class="Project-Card">
+            <h3>2. Responsive Portfolials</h3>
+            <button class="expand-btn" data-target="details2">
+              Show Details
+            </button>
+            <p id="details2" hidden>
+              Constructed clean HTML5 semantics bundled alongside defensive CSS
+              layouts targeting multiple device viewports seamlessly.
+            </p>
+          </div>
+          <div class="Project-Card">
+            <h3>3. Vulnerability Assessments</h3>
+            <button class="expand-btn" data-target="details3">
+              Show Details
+            </button>
+            <p id="details3" hidden>
+              Conducted basic network discovery scans to identify exposed
+              endpoints and evaluate operational vector risks.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="learning" Class="content section">
+        <h2>My Learning Plan</h2>
+        <ol>
+          <li>
+            Practice HTML & CSS regularly in order to buld websites and test
+            them.
+          </li>
+          <li>Learn Java and python Programming</li>
+          <li>
+            Learn Computer Networking and make the internet a safe screen space.
+          </li>
+          <li>Learn Ethical hacking and specialize in defensive Security.</li>
+        </ol>
+        <table>
+          <caption>
+            My weekly Web Learning Plan
+          </caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Topic</th>
+              <th>Practice Task</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>HTML</td>
+              <td>Create a webpage.</td>
+            </tr>
+            <tr>
+              <td>wednesday</td>
+              <td>CSS</td>
+              <td>Style a webpage.</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>HTML & CSS</td>
+              <td>Build a website.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Learn more at
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn_Web_development"
+          >
+            MDN Web Development </a
+          >.
+        </p>
+      </section>
+      <section id="photos" Class="content-section">
+        <h2>My photos</h2>
+        <figure>
+          <img src="images/photo1.png" alt="My first photograph" />
+          <figcaption>My study desk with my laptop and books.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="My second photo." />
+          <figcaption>Ready for a presentation.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="A picture of me in labcoat." />
+          <figcaption>
+            A sneak peek of me in my lab coat, going to the computer lab.
+          </figcaption>
+        </figure>
+      </section>
+      <section id="media" Class="content-section">
+        <h2>My media</h2>
+        <p>My introduction video and audio recording.</p>
+        <video controls>
+          <source src="videos/my-video.mp4" type="video/mp4" />
+        </video>
+        <p class="caption">
+          written audio summary: Hello! my name is Catherine Kaliki. I am a
+          Cyber Security student. In this web technology course , i hope to
+          master a skill of creating websites.
+        </p>
+        <h2>my audio</h2>
+        <audio controls>
+          <source src="videos/my-audio.aac" type="audio/aac" />
+        </audio>
+        <p class="caption">
+          this voice log describes my core motivation for picking up secure web
+          configuration tracks.
+        </p>
+      </section>
+      <section id="calculator" class="content-section">
+        <h2>Study Hours Calculator</h2>
+        <div class="calc-box">
+          <div class="form-group">
+            <label for="hours-per-day">Planned Hours Per Day:</label>
+            <input type="number" id="hours-per-day" min="1" max="24" />
+          </div>
+          <div class="form-group">
+            <label for="days-per-week">Days Per Week (1-7):</label>
+            <input type="number" id="days-per-week" min="1" max="7" />
+          </div>
+          <button type="button" id="calc-btn">Calculate Weekly Total</button>
+          <p id="calc-result" class="calc-output"></p>
+        </div>
+      </section>
+      <section id="contact" class="content-section">
+        <h2>contact me</h2>
+        <p>Use the form below to write a message.</p>
+        <p class="demo-note">Browser demonstration only-no message is sent.</p>
+        <p id="form-error" class="error-msg"></p>
+        <form id="portfolio-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="user-name">Full name:</label>
+            <input type="text" id="user-name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="user-email">Email Address:</label>
+            <input type="email" id="user-email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit">Submit Details</button>
+        </form>
+        <div id="preview-container" class="preview-box hidden">
+          <p id="preview-text"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 My Personal Website. Built for ICT251 Web Technology.</p>
+      <p>
+        <a href="https://github.com/catherinekaliki/ICT251-Activitys"
+          >View Source on GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
